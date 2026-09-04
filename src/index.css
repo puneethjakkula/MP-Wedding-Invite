@@ -1,0 +1,189 @@
+@import "tailwindcss";
+@import "@fontsource/great-vibes/latin-400.css";
+@import "@fontsource/cormorant-garamond/latin-500.css";
+@import "@fontsource/cormorant-garamond/latin-600.css";
+@import "@fontsource/cormorant-garamond/latin-700.css";
+
+@theme {
+  --font-script: "Great Vibes", cursive;
+  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: ui-sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  --color-page: var(--page);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --color-gold: var(--gold);
+  --color-band: var(--band);
+  --color-band-ink: var(--band-ink);
+  --color-ornament: var(--ornament);
+}
+
+:root,
+[data-theme="marigold"] {
+  --page: #faf3e8;
+  --ink: #3b2418;
+  --muted: #7a5a45;
+  --accent: #e09a1a;
+  --accent-deep: #9b1d2a;
+  --gold: #c9a227;
+  --band: #3d1f14;
+  --band-ink: #f8ead4;
+  --ornament: #b45309;
+}
+
+[data-theme="ruby"] {
+  --page: #fbf1ee;
+  --ink: #3a1218;
+  --muted: #8a4a52;
+  --accent: #c41e3a;
+  --accent-deep: #7a1024;
+  --gold: #c9a227;
+  --band: #2a0f16;
+  --band-ink: #fde8ea;
+  --ornament: #be123c;
+}
+
+[data-theme="emerald"] {
+  --page: #f3f6ef;
+  --ink: #143023;
+  --muted: #4d6b58;
+  --accent: #0f7a4a;
+  --accent-deep: #14532d;
+  --gold: #c9a227;
+  --band: #0c2418;
+  --band-ink: #e7f5ea;
+  --ornament: #047857;
+}
+
+[data-theme="sapphire"] {
+  --page: #f3f4f8;
+  --ink: #152038;
+  --muted: #4b5a78;
+  --accent: #1e4d8c;
+  --accent-deep: #1e3a5f;
+  --gold: #c9a227;
+  --band: #0f1c33;
+  --band-ink: #e8eef8;
+  --ornament: #1d4ed8;
+}
+
+[data-theme="lotus"] {
+  --page: #fbf0f4;
+  --ink: #3b1024;
+  --muted: #8a4d68;
+  --accent: #c2185b;
+  --accent-deep: #831843;
+  --gold: #c9a227;
+  --band: #2d1020;
+  --band-ink: #fde8f0;
+  --ornament: #db2777;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 80;
+  transform: translateY(-200%);
+  border-radius: 999px;
+  background: var(--band);
+  color: var(--band-ink);
+  padding: 0.65rem 1rem;
+  min-height: 44px;
+  font-size: 0.875rem;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.nav-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.nav-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-left 42s linear infinite;
+}
+
+.marquee-track-reverse {
+  animation: marquee-left 48s linear infinite reverse;
+}
+
+.marquee:hover .marquee-track,
+.marquee:hover .marquee-track-reverse,
+.marquee:active .marquee-track,
+.marquee:active .marquee-track-reverse {
+  animation-play-state: paused;
+}
+
+@keyframes petal-fall {
+  0% {
+    transform: translate3d(0, -12%, 0) rotate(0deg);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate3d(var(--drift, 24px), 112dvh, 0) rotate(320deg);
+    opacity: 0.15;
+  }
+}
+
+.petal {
+  animation: petal-fall var(--dur, 16s) linear infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .falling-petals {
+    display: none !important;
+  }
+
+  .marquee-track,
+  .marquee-track-reverse {
+    animation: none;
+  }
+}

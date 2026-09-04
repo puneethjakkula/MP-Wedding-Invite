@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img">
+  <rect width="800" height="600" fill="#faf3e8"/>
+  <circle cx="160" cy="140" r="90" fill="#e09a1a" opacity="0.55"/>
+  <circle cx="640" cy="460" r="120" fill="#9b1d2a" opacity="0.45"/>
+  <circle cx="400" cy="300" r="70" fill="#c9a227" opacity="0.7"/>
+  <path d="M400 210 C430 250 430 350 400 390 C370 350 370 250 400 210 Z" fill="#e09a1a"/>
+  <path d="M310 300 C350 270 450 270 490 300 C450 330 350 330 310 300 Z" fill="#9b1d2a"/>
+  <text x="400" y="540" text-anchor="middle" font-size="28" fill="#9b1d2a" font-family="Georgia, serif">Portrait 01</text>
+</svg>

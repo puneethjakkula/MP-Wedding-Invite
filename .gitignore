@@ -1,0 +1,47 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Vite build output
+dist/
+dist-ssr/
+
+# Prettier / Linters cache
+.eslintcache
+.stylelintcache
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Environmental variables & Secrets (Crucial for Vite)
+.env
+.env.production
+.env.development
+*.local
+
+# Testing (Vitest / Jest / Code coverage)
+coverage/
+.nyc_output/
+
+# IDEs and Text Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Operating System Files
+.DS_Store
+Thumbs.db
