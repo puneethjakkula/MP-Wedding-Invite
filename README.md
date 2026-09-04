@@ -1,4 +1,4 @@
-# Meera & Arjun — wedding site
+# Abhishek & Neha — wedding site
 
 A single-page, config-driven wedding website built with Vite, React, Tailwind CSS v4, and Motion. It deploys to GitHub Pages.
 

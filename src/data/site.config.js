@@ -99,7 +99,7 @@ export const site = {
       date: "24 January 2027",
       time: "11:30 AM",
       venue: "Mandap at Rambagh Palace",
-      note: "The pheras. Please be seated a little before the muhurat.",
+      note: "Sacred chants, heartfelt vows, and the beautiful beginning of forever.",
       accent: "sapphire",
       mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rambagh+Palace+Jaipur",
     },
