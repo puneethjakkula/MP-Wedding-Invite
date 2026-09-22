@@ -5,25 +5,50 @@ export function BottomNav() {
   const [active, setActive] = useState(navItems[0]?.id);
 
   useEffect(() => {
-    const sections = navItems
-      .map((item) => document.getElementById(item.id))
-      .filter(Boolean);
+    const getSectionFromHash = () => {
+      const id = window.location.hash.replace("#", "");
 
-    if (!sections.length) return undefined;
+      if (navItems.some((item) => item.id === id)) {
+        setActive(id);
+      }
+    };
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible?.target?.id) setActive(visible.target.id);
-      },
-      { rootMargin: "-35% 0px -50% 0px", threshold: [0.15, 0.4, 0.7] },
-    );
+    const updateActiveOnScroll = () => {
+      const marker = window.scrollY + window.innerHeight * 0.25;
+      let current = navItems[0]?.id;
 
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
+      navItems.forEach((item) => {
+        const section = document.getElementById(item.id);
+
+        if (section && section.offsetTop <= marker) {
+          current = item.id;
+        }
+      });
+
+      setActive(current);
+    };
+
+    window.addEventListener("hashchange", getSectionFromHash);
+    window.addEventListener("scroll", updateActiveOnScroll, {
+      passive: true,
+    });
+
+    getSectionFromHash();
+    updateActiveOnScroll();
+
+    return () => {
+      window.removeEventListener("hashchange", getSectionFromHash);
+      window.removeEventListener("scroll", updateActiveOnScroll);
+    };
   }, []);
+
+  function handleClick(id) {
+    setActive(id);
+
+    // The browser will scroll to the matching section using the href.
+    // This also ensures the highlight changes on the first click.
+    window.history.replaceState(null, "", `#${id}`);
+  }
 
   return (
     <nav
@@ -34,12 +59,16 @@ export function BottomNav() {
         <ul className="flex min-w-max items-center justify-between gap-1">
           {navItems.map((item) => {
             const isActive = active === item.id;
+
             return (
               <li key={item.id}>
                 <a
                   href={`#${item.id}`}
-                  className={`inline-flex min-h-11 min-w-11 items-center justify-center rounded-full px-3 text-xs font-medium whitespace-nowrap sm:text-sm ${
-                    isActive ? "bg-accent-deep text-page" : "text-ink"
+                  onClick={() => handleClick(item.id)}
+                  className={`inline-flex min-h-11 min-w-11 items-center justify-center rounded-full px-3 text-xs font-medium whitespace-nowrap transition-colors sm:text-sm ${
+                    isActive
+                      ? "bg-accent-deep text-page"
+                      : "text-ink hover:bg-accent-deep/10"
                   }`}
                 >
                   {item.label}
