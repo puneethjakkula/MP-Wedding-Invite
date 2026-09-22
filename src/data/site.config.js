@@ -237,7 +237,7 @@ export const site = {
 export const navItems = [
   { id: "hero", label: "Home" },
   { id: "invitation", label: "Invite" },
-  { id: "countdown", label: "When" },
+  { id: "countdown", label: "Countdown" },
   { id: "lineup", label: "Events" },
   { id: "venue", label: "Venue" },
   { id: "gallery", label: "Photos" },

@@ -15,13 +15,13 @@ export function Hero() {
       <CornerMandala className="pointer-events-none absolute bottom-16 left-0 w-28 max-w-[36vw] origin-center scale-y-[-1] md:w-44" />
       <CornerMandala className="pointer-events-none absolute bottom-16 right-0 w-28 max-w-[36vw] origin-center scale-[-1] md:w-44" />
 
-      <p className="relative font-display text-sm tracking-[0.28em] text-muted uppercase">
+      <p className="relative mb-6 font-display text-sm tracking-[0.28em] text-muted uppercase">
         {hero.kicker}
       </p>
       <h1 className="relative mt-4 font-script text-6xl leading-none text-accent-deep sm:text-7xl md:text-8xl">
-        {couple.partnerA}
+        <span className="block">{couple.partnerA}</span>
         <span className="mx-2 text-gold">&</span>
-        {couple.partnerB}
+        <span className="block">{couple.partnerB}</span>
       </h1>
       <p className="relative mt-6 font-display text-xl text-ink md:text-2xl">
         {displayDate}
