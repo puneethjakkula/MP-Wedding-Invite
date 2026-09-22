@@ -16,18 +16,18 @@ export const site = {
   meta: {
     title: "Mrudula & Puneeth — We're getting married",
     description:
-      "Join Mrudula and Puneeth in Hyderabad on 26 November 2026. Ceremony, celebrations, and all the details.",
+      "Join Mrudula and Puneeth in Hyderabad on 26 November 2026.",
   },
   couple: {
     partnerA: "Mrudula",
     partnerB: "Puneeth",
   },
-  hashtag: "#MrudulaWedsPuneeth",
+  hashtag: "#Mruneeth",
   weddingDateIso: "2026-11-26T11:52:00+05:30",
   displayDate: "26 November 2026",
   city: "Hyderabad, India",
   music: {
-    src: "music/celebration.wav",
+    src: "music/song.mp3",
     labelPlay: "Play music",
     labelPause: "Pause music",
   },
@@ -230,7 +230,7 @@ export const site = {
   },
   footer: {
     closing: "We cannot wait to celebrate with you.",
-    crafted: "With love, from our little corner of the internet.",
+    crafted: "Crafted with 💜.",
   },
 };
 
