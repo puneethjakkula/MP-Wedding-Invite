@@ -123,75 +123,61 @@ export const site = {
     photos: [
       {
         src: "photos/1.jpg",
-        alt: "Meera and Arjun walking through a marigold-lined courtyard at dusk",
+        //alt: "Meera and Arjun walking through a marigold-lined courtyard at dusk",
         width: 800,
         height: 600,
         position: "50% 35%"
       },
       {
         src: "photos/2.jpg",
-        alt: "Close-up of henna patterns on Meera's hands with gold bangles",
+        //alt: "Close-up of henna patterns on Meera's hands with gold bangles",
         width: 800,
         height: 600,
         position: "50% 35%"
       },
       {
         src: "photos/3.jpg",
-        alt: "Arjun laughing with family during a rooftop tea in Jaipur",
+        //alt: "Arjun laughing with family during a rooftop tea in Jaipur",
         width: 800,
         height: 600,
       },
       {
         src: "photos/4.jpg",
-        alt: "A table of sweets, roses, and brass diyas before a celebration",
+        //alt: "A table of sweets, roses, and brass diyas before a celebration",
         width: 800,
         height: 600,
         position: "50% 35%"
       },
       {
         src: "photos/5.jpg",
-        alt: "The couple under a string of fairy lights in a palace garden",
+        //alt: "The couple under a string of fairy lights in a palace garden",
         width: 800,
         height: 600,
-      },
-      {
-        src: "photos/6.jpg",
-        alt: "Folk musicians playing dhol and flute at a sangeet rehearsal",
-        width: 800,
-        height: 600,
-        position: "50% 60%"
       },
       {
         src: "photos/7.jpg",
-        alt: "Meera in a rose-coloured saree standing beside carved sandstone",
+        //alt: "Meera in a rose-coloured saree standing beside carved sandstone",
         width: 800,
         height: 600,
         position: "50% 35%"
       },
       {
         src: "photos/8.jpg",
-        alt: "Arjun and Meera holding hands, rings catching the evening sun",
+        //alt: "Arjun and Meera holding hands, rings catching the evening sun",
         width: 800,
         height: 600,
         position: "50% 15%"
       },
       {
         src: "photos/9.jpg",
-        alt: "Arjun and Meera holding hands, rings catching the evening sun",
+        //alt: "Arjun and Meera holding hands, rings catching the evening sun",
         width: 800,
         height: 600,
         position: "50% 35%"
       },
       {
-        src: "photos/10.jpg",
-        alt: "Arjun and Meera holding hands, rings catching the evening sun",
-        width: 800,
-        height: 600,
-        position: "50% 15%"
-      },
-      {
         src: "photos/11.jpg",
-        alt: "Arjun and Meera holding hands, rings catching the evening sun",
+        //alt: "Arjun and Meera holding hands, rings catching the evening sun",
         width: 800,
         height: 600,
         position: "50% 35%"
