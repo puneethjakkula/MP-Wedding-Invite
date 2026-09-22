@@ -16,7 +16,7 @@ export const site = {
   meta: {
     title: "Mrudula & Puneeth — We're getting married",
     description:
-      "Join Mrudula and Puneeth in Hyderabad on 26 November 2026.",
+      "Join us in Hyderabad on 26 November 2026",
   },
   couple: {
     partnerA: "Mrudula",
