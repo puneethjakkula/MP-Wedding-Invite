@@ -118,11 +118,11 @@ export const site = {
       "The convention sits just north of secunderabad. From Begumpet Airport it is about a 20-minute drive. ",
     mapsCta: "Open in Google Maps",
     mapsUrl: "https://maps.app.goo.gl/Tprstqf7mFV5hk6f7",
-    loadMapLabel: "Load the map",
-    mapTitle: "Sri Raja Rajeshwari Convention, Hyderabad",
-    embedUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.576622243592!2d78.47269222664588!3d17.452813105061647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a6f1b09435f%3A0x72e9d68899eae2a!2sSri%20Raja%20Rajeshwari%20Convention!5e0!3m2!1sen!2sde!4v1790064628294!5m2!1sen!2sde",
-    facadeCaption: "Tap to load Google Maps. The map is not loaded until you ask, so the page stays light.",
+    //loadMapLabel: "Load the map",
+    //mapTitle: "Sri Raja Rajeshwari Convention, Hyderabad",
+    //embedUrl:
+      //"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.576622243592!2d78.47269222664588!3d17.452813105061647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a6f1b09435f%3A0x72e9d68899eae2a!2sSri%20Raja%20Rajeshwari%20Convention!5e0!3m2!1sen!2sde!4v1790064628294!5m2!1sen!2sde",
+    //facadeCaption: "Tap to load Google Maps. The map is not loaded until you ask, so the page stays light.",
   },
   gallery: {
     eyebrow: "A few frames",
