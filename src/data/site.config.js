@@ -23,8 +23,8 @@ export const site = {
     partnerB: "Puneeth",
   },
   hashtag: "#Mruneeth",
-  weddingDateIso: "2026-11-26T11:52:00+05:30",
-  displayDate: "26 November 2026",
+  weddingDateIso: "2026-11-26T10:30:00+05:30",
+  displayDate: "26 November 2026, 10:30AM",
   city: "Hyderabad, India",
   music: {
     src: "music/song.mp3",
@@ -94,10 +94,11 @@ export const site = {
       // mapsUrl: "https://www.google.com/maps/search/?api=1&query=C-Scheme+Jaipur",
     },
     {
+      featured: true,
       id: "wedding",
       title: "Wedding",
-      date: "24 January 2027",
-      time: "10:30 PM",
+      date: "26 November 2026",
+      time: "10:30 AM",
       // venue: "Mandap at Rambagh Palace",
       note: "A sacred Telugu ceremony filled with jeelakarra bellam, thali, talambralu, and the blessings of our families.",
       accent: "ruby",
@@ -114,7 +115,7 @@ export const site = {
       "India",
     ],
     directions:
-      "The palace sits just north of the secunderabad. From Begumpet Airport it is about a 20-minute drive. Valet will be waiting at the main gate; rideshare drop-off is the same entrance.",
+      "The convention sits just north of secunderabad. From Begumpet Airport it is about a 20-minute drive. ",
     mapsCta: "Open in Google Maps",
     mapsUrl: "https://maps.app.goo.gl/Tprstqf7mFV5hk6f7",
     loadMapLabel: "Load the map",
