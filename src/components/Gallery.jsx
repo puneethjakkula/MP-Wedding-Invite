@@ -26,6 +26,7 @@ function Row({ photos, reverse, onOpen }) {
               loading="lazy"
               decoding="async"
               className="h-40 w-56 object-cover sm:h-48 sm:w-72"
+              style={{ objectPosition: photo.position || "center center" }}
             />
           </button>
         ))}

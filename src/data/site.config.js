@@ -4,7 +4,7 @@
  */
 
 export const site = {
-  siteUrl: "https://username.github.io/DeW/",
+  siteUrl: "https://puneethjakkula.github.io/MP-Wedding-Invite/",
   defaultTheme: "lotus",
   themes: [
     { id: "marigold", label: "Marigold" },
@@ -14,18 +14,18 @@ export const site = {
     { id: "lotus", label: "Lotus" },
   ],
   meta: {
-    title: "Abhishek & Neha — We're getting married",
+    title: "Mrudula & Puneeth — We're getting married",
     description:
-      "Join Abhishek and Neha in Ravatbhata on 24 January 2027. Ceremony, celebrations, and all the details.",
+      "Join Mrudula and Puneeth in Hyderabad on 26 November 2026. Ceremony, celebrations, and all the details.",
   },
   couple: {
-    partnerA: "Abhishek",
-    partnerB: "Neha",
+    partnerA: "Mrudula",
+    partnerB: "Puneeth",
   },
-  hashtag: "#AbhishekWedsNeha",
-  weddingDateIso: "2027-01-24T16:30:00+05:30",
-  displayDate: "24 January 2027",
-  city: "Ravatbhata, Rajasthan",
+  hashtag: "#MrudulaWedsPuneeth",
+  weddingDateIso: "2026-11-26T11:52:00+05:30",
+  displayDate: "26 November 2026",
+  city: "Hyderabad, India",
   music: {
     src: "music/celebration.wav",
     labelPlay: "Play music",
@@ -33,7 +33,7 @@ export const site = {
   },
   skipLink: "Skip to content",
   hero: {
-    kicker: "Together with their families",
+    kicker: "We're getting married",
     ctaLabel: "Open the invitation",
     ctaHref: "#invitation",
   },
@@ -47,7 +47,7 @@ export const site = {
     signOff: "With all our love",
   },
   countdown: {
-    heading: "Until we say I do",
+    heading: "Until the celebration begins",
     labels: {
       days: "Days",
       hours: "Hours",
@@ -127,20 +127,20 @@ export const site = {
   venue: {
     eyebrow: "Find us",
     heading: "The wedding venue",
-    name: "Rambagh Palace",
+    name: "Sri Raja Rajeshwari Convention",
     addressLines: [
-      "Bhawani Singh Road",
-      "Jaipur, Rajasthan 302005",
+      "Bowenpally, Secunderabad",
+      "Hyderabad, Telangana 500009",
       "India",
     ],
     directions:
-      "The palace sits just south of the old city. From Jaipur International Airport it is about a 25-minute drive. Valet will be waiting at the main gate; rideshare drop-off is the same entrance.",
+      "The palace sits just north of the secunderabad. From Begumpet Airport it is about a 20-minute drive. Valet will be waiting at the main gate; rideshare drop-off is the same entrance.",
     mapsCta: "Open in Google Maps",
-    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rambagh+Palace+Jaipur",
+    mapsUrl: "https://maps.app.goo.gl/Tprstqf7mFV5hk6f7",
     loadMapLabel: "Load the map",
-    mapTitle: "Map of Rambagh Palace, Jaipur",
+    mapTitle: "Sri Raja Rajeshwari Convention, Hyderabad",
     embedUrl:
-      "https://maps.google.com/maps?q=Rambagh%20Palace%20Jaipur&t=&z=15&ie=UTF8&iwloc=&output=embed",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.576622243592!2d78.47269222664588!3d17.452813105061647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a6f1b09435f%3A0x72e9d68899eae2a!2sSri%20Raja%20Rajeshwari%20Convention!5e0!3m2!1sen!2sde!4v1790064628294!5m2!1sen!2sde",
     facadeCaption: "Tap to load Google Maps. The map is not loaded until you ask, so the page stays light.",
   },
   gallery: {
@@ -152,52 +152,79 @@ export const site = {
     nextLabel: "Next photo",
     photos: [
       {
-        src: "photos/1.jpeg",
+        src: "photos/1.jpg",
         alt: "Meera and Arjun walking through a marigold-lined courtyard at dusk",
         width: 800,
         height: 600,
+        position: "50% 35%"
       },
       {
-        src: "photos/2.jpeg",
+        src: "photos/2.jpg",
         alt: "Close-up of henna patterns on Meera's hands with gold bangles",
         width: 800,
         height: 600,
+        position: "50% 35%"
       },
       {
-        src: "photos/3.jpeg",
+        src: "photos/3.jpg",
         alt: "Arjun laughing with family during a rooftop tea in Jaipur",
         width: 800,
         height: 600,
       },
       {
-        src: "photos/4.jpeg",
+        src: "photos/4.jpg",
         alt: "A table of sweets, roses, and brass diyas before a celebration",
         width: 800,
         height: 600,
+        position: "50% 35%"
       },
       {
-        src: "photos/5.jpeg",
+        src: "photos/5.jpg",
         alt: "The couple under a string of fairy lights in a palace garden",
         width: 800,
         height: 600,
       },
       {
-        src: "photos/6.jpeg",
+        src: "photos/6.jpg",
         alt: "Folk musicians playing dhol and flute at a sangeet rehearsal",
         width: 800,
         height: 600,
+        position: "50% 60%"
       },
       {
-        src: "photos/7.jpeg",
+        src: "photos/7.jpg",
         alt: "Meera in a rose-coloured saree standing beside carved sandstone",
         width: 800,
         height: 600,
+        position: "50% 35%"
       },
       {
-        src: "photos/8.jpeg",
+        src: "photos/8.jpg",
         alt: "Arjun and Meera holding hands, rings catching the evening sun",
         width: 800,
         height: 600,
+        position: "50% 15%"
+      },
+      {
+        src: "photos/9.jpg",
+        alt: "Arjun and Meera holding hands, rings catching the evening sun",
+        width: 800,
+        height: 600,
+        position: "50% 35%"
+      },
+      {
+        src: "photos/10.jpg",
+        alt: "Arjun and Meera holding hands, rings catching the evening sun",
+        width: 800,
+        height: 600,
+        position: "50% 15%"
+      },
+      {
+        src: "photos/11.jpg",
+        alt: "Arjun and Meera holding hands, rings catching the evening sun",
+        width: 800,
+        height: 600,
+        position: "50% 35%"
       },
     ],
   },
