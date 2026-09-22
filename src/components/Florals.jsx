@@ -99,19 +99,22 @@ export function MarigoldGarland({ className = "" }) {
 }
 
 const PETALS = [
-  { left: "6%", delay: "0s", dur: "15s", drift: "18px" },
-  { left: "18%", delay: "3s", dur: "18s", drift: "-22px" },
-  { left: "31%", delay: "1.2s", dur: "16s", drift: "28px" },
-  { left: "44%", delay: "5s", dur: "20s", drift: "-16px" },
-  { left: "57%", delay: "2.4s", dur: "17s", drift: "20px" },
-  { left: "69%", delay: "6.5s", dur: "19s", drift: "-26px" },
-  { left: "81%", delay: "0.8s", dur: "14s", drift: "14px" },
-  { left: "92%", delay: "4.1s", dur: "21s", drift: "-12px" },
+  { left: "6%", delay: "0s", dur: "15s", drift: "18px", rotate: "-25deg" },
+  { left: "18%", delay: "3s", dur: "18s", drift: "-22px", rotate: "20deg" },
+  { left: "31%", delay: "1.2s", dur: "16s", drift: "28px", rotate: "45deg" },
+  { left: "44%", delay: "5s", dur: "20s", drift: "-16px", rotate: "-40deg" },
+  { left: "57%", delay: "2.4s", dur: "17s", drift: "20px", rotate: "15deg" },
+  { left: "69%", delay: "6.5s", dur: "19s", drift: "-26px", rotate: "70deg" },
+  { left: "81%", delay: "0.8s", dur: "14s", drift: "14px", rotate: "-15deg" },
+  { left: "92%", delay: "4.1s", dur: "21s", drift: "-12px", rotate: "35deg" },
 ];
 
 export function FallingPetals() {
   return (
-    <div className="falling-petals pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+    <div
+      className="falling-petals pointer-events-none absolute inset-0 overflow-hidden"
+      aria-hidden="true"
+    >
       {PETALS.map((petal) => (
         <span
           key={petal.left}
@@ -123,8 +126,27 @@ export function FallingPetals() {
             "--drift": petal.drift,
           }}
         >
-          <svg width="18" height="22" viewBox="0 0 18 22" className="fill-accent">
-            <ellipse cx="9" cy="11" rx="6" ry="10" />
+          <svg
+            width="24"
+            height="28"
+            viewBox="0 0 24 28"
+            className="fill-accent"
+          >
+            <path
+              d="M12 27
+                 C8 25 3 21 2 15
+                 C1 9 4 4 9 1
+                 C10 0.5 11 1.5 12 3
+                 C13 1.5 14 0.5 15 1
+                 C20 4 23 9 22 15
+                 C21 21 16 25 12 27 Z"
+            />
+            <path
+              d="M12 4 C11 10 11 18 12 25"
+              fill="none"
+              className="stroke-accent-deep/30"
+              strokeWidth="0.8"
+            />
           </svg>
         </span>
       ))}
