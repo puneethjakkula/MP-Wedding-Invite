@@ -1,6 +1,6 @@
 import { site } from "../data/site.config";
 import { getAccent } from "../lib/accentClasses";
-import { Icon } from "./Icon";
+// import { Icon } from "./Icon";
 
 export function Lineup() {
   const { lineup, events } = site;
@@ -43,6 +43,7 @@ export function Lineup() {
                   </p>
                   <p className="mt-2 text-sm text-muted">{event.venue}</p>
                   <p className="mt-3 text-sm leading-6 text-ink/80">{event.note}</p>
+                  {/* 
                   <a
                     href={event.mapsUrl}
                     target="_blank"
@@ -52,6 +53,7 @@ export function Lineup() {
                     <Icon name="place" className="h-5 w-5" />
                     {lineup.mapsLabel}
                   </a>
+                */}
                 </article>
               </li>
             );
