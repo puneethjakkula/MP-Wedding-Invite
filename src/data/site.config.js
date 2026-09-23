@@ -110,7 +110,7 @@ export const site = {
     heading: "The wedding venue",
     name: "Sri Raja Rajeshwari Convention",
     addressLines: [
-      "Bowenpally, Secunderabad",
+      "Bowenpally, Secunderabad,",
       "Hyderabad, Telangana 500009",
       "India",
     ],
