@@ -41,8 +41,7 @@ export const site = {
     eyebrow: "A note from us",
     heading: "Please celebrate with us",
     paragraphs: [
-      "We fell in love between shared playlists, late-night walks, and a thousand small kindnesses. On a bright winter afternoon in Ravatbhata, we will promise each other a lifetime of the same.",
-      "Your presence is the gift we want most. Come for the colour, stay for the dancing, and help us begin this next chapter surrounded by the people we love.",
+      "Somewhere between two continents, a little curiosity found its way to a little love. What followed was a collection of long conversations, shared laughter, familiar experiences, and countless small moments that made the miles between us feel wonderfully small.", "And now, our two worlds are becoming one. So we’re bringing together all the people we love, under one roof, for a day filled with color, music, happy tears, and a little bit of magic.", "Come celebrate, dance, laugh, and make a memory with us as we begin our forever.",
     ],
     signOff: "With all our love",
   },
@@ -137,61 +136,63 @@ export const site = {
         //alt: "Meera and Arjun walking through a marigold-lined courtyard at dusk",
         width: 800,
         height: 600,
-        position: "50% 35%"
+        position: "50% 35%",
       },
       {
         src: "photos/2.jpg",
         //alt: "Close-up of henna patterns on Meera's hands with gold bangles",
         width: 800,
         height: 600,
-        position: "50% 35%"
+        position: "50% 35%",
       },
       {
         src: "photos/3.jpg",
         //alt: "Arjun laughing with family during a rooftop tea in Jaipur",
         width: 800,
         height: 600,
+        position: "50% 35%",
       },
       {
         src: "photos/4.jpg",
         //alt: "A table of sweets, roses, and brass diyas before a celebration",
         width: 800,
         height: 600,
-        position: "50% 35%"
+        position: "50% 35%",
       },
       {
         src: "photos/5.jpg",
         //alt: "The couple under a string of fairy lights in a palace garden",
         width: 800,
         height: 600,
-      },
-      {
-        src: "photos/7.jpg",
-        //alt: "Meera in a rose-coloured saree standing beside carved sandstone",
-        width: 800,
-        height: 600,
-        position: "50% 35%"
+        position: "50% 45%",
       },
       {
         src: "photos/8.jpg",
         //alt: "Arjun and Meera holding hands, rings catching the evening sun",
         width: 800,
         height: 600,
-        position: "50% 15%"
+        position: "50% 15%",
       },
       {
-        src: "photos/9.jpg",
-        //alt: "Arjun and Meera holding hands, rings catching the evening sun",
+        src: "photos/7.jpg",
+        //alt: "Meera in a rose-coloured saree standing beside carved sandstone",
         width: 800,
         height: 600,
-        position: "50% 35%"
+        position: "50% 35%",
       },
       {
         src: "photos/11.jpg",
         //alt: "Arjun and Meera holding hands, rings catching the evening sun",
         width: 800,
         height: 600,
-        position: "50% 35%"
+        position: "50% 35%",
+      },
+      {
+        src: "photos/9.jpg",
+        //alt: "Arjun and Meera holding hands, rings catching the evening sun",
+        width: 800,
+        height: 600,
+        position: "50% 35%",
       },
     ],
   },
