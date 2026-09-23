@@ -16,7 +16,7 @@ export const site = {
   meta: {
     title: "Mrudula & Puneeth — We're getting married",
     description: "Join us in Hyderabad on 26 November 2026",
-    image: "photos/WeddingLogo_MP.png",
+    image: "photos/WeddingLogo_MP_v2.png",
   },
   couple: {
     partnerA: "Mrudula",
