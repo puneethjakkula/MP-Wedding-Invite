@@ -5,7 +5,7 @@ export function Invitation() {
   const { invitation, couple } = site;
 
   return (
-    <section id="invitation" className="scroll-mt-6 px-5 py-20">
+    <section id="invitation" className="scroll-mt-6 px-5 py-20 pt-2">
       <div className="mx-auto max-w-2xl text-center">
         <MarigoldGarland className="mx-auto mb-10 w-full max-w-lg" />
         <p className="font-display text-sm tracking-[0.28em] text-gold uppercase">

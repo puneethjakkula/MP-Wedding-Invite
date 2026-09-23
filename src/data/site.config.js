@@ -213,7 +213,7 @@ export const site = {
       text: "One message. One \"Hey hey hey!\", and the beginning of us.",
       image: "photos/hello.png",
       imageAlt: "The beginning of our story",
-      imageClass: "aspect-[4/3] w-28 sm:w-24 md:w-42",
+      imageClass: "aspect-[4/3] w-28 sm:w-32 md:w-40",
       imagePosition: "50% 35%",
     },
     {
@@ -242,7 +242,7 @@ export const site = {
       text: "From one little hello to forever.",
       image: "photos/marriage.png",
       imageAlt: "The couple beginning their forever together",
-      imageClass: "aspect-[4/3] w-28 sm:w-24 md:w-32",
+      imageClass: "aspect-[4/3] w-28 sm:w-32 md:w-40",
       imagePosition: "50% 10%",
     },
   ],

@@ -23,7 +23,10 @@ export function Storyboard() {
           <span className="absolute top-0 bottom-0 left-5 w-px bg-gold/40" />
 
           {storyboard.moments.map((moment) => (
-            <li key={moment.id} className="relative mb-10 pl-16 last:mb-0">
+            <li
+              key={moment.id}
+              className="relative mb-10 pl-16 last:mb-0"
+            >
               <span className="absolute left-0 top-0 z-10 flex h-10 w-10 items-center justify-center rounded-full border border-gold/40 bg-page text-xl text-accent-deep shadow-sm">
                 ♥
               </span>
@@ -33,11 +36,13 @@ export function Storyboard() {
                   <img
                     src={asset(moment.image)}
                     alt={moment.imageAlt || ""}
-                    className={`mb-4 w-full rounded-xl object-cover ${
-                      moment.imageClass || "aspect-[4/3]"
+                    className={`mb-4 max-w-full rounded-xl object-cover ${
+                      moment.imageClass ||
+                      "aspect-[4/3] w-40 sm:w-56 md:w-64"
                     }`}
                     style={{
-                      objectPosition: moment.imagePosition || "center center",
+                      objectPosition:
+                        moment.imagePosition || "center center",
                     }}
                     loading="lazy"
                   />
