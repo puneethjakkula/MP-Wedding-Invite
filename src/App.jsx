@@ -10,6 +10,7 @@ import { Gallery } from "./components/Gallery";
 import { Footer } from "./components/Footer";
 import { BottomNav } from "./components/BottomNav";
 import { MusicToggle } from "./components/MusicToggle";
+import { Storyboard } from "./components/Storyboard";
 
 export default function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ export default function App() {
         <Lineup />
         <Venue />
         <Gallery />
+        <Storyboard />
       </main>
       <Footer />
       <MusicToggle />
