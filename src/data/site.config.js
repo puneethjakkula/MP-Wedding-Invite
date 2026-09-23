@@ -14,9 +14,9 @@ export const site = {
     { id: "lotus", label: "Lotus" },
   ],
   meta: {
-    title: "Mrudula & Puneeth — We're getting married",
-    description:
-      "Join us in Hyderabad on 26 November 2026",
+    title: "Mrudula & Puneeth | We're getting married",
+    description: "Join us in Hyderabad on 26 November 2026",
+    image: "photos/WeddingLogo_MP.png",
   },
   couple: {
     partnerA: "Mrudula",
@@ -99,7 +99,7 @@ export const site = {
       date: "26 November 2026",
       time: "10:30 AM",
       // venue: "Mandap at Rambagh Palace",
-      note: "A sacred Telugu ceremony filled with jeelakarra bellam, thali, talambralu, and the blessings of our families.",
+      note: "Muhurtam: 11:52 AM. A sacred ceremony filled with jeelakarra bellam, thali, talambralu, and the blessings of our families.",
       accent: "ruby",
       // mapsUrl: "https://www.google.com/maps/search/?api=1&query=Rambagh+Palace+Jaipur",
     },
@@ -125,7 +125,7 @@ export const site = {
   },
   gallery: {
     eyebrow: "A glimpse",
-    heading: "Into our story so far",
+    heading: "Our story so far",
     lightboxLabel: "Photo viewer",
     closeLabel: "Close",
     prevLabel: "Previous photo",
