@@ -1,18 +1,34 @@
 const paths = {
   play: "M8 5v14l11-7z",
+
   pause: "M6 19h4V5H6v14zm8-14v14h4V5h-4z",
+
   close:
     "M19 6.41 17.59 5 12 10.59 7.41 5 6 6.41 10.59 12 6 17.59 7.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
+
   chevronLeft: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z",
+
   chevronRight: "M10 6 8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z",
+
   place:
     "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z",
+
   map: "M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z",
+
   music:
     "M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z",
+
+  calendar:
+    "M7 2v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-2V2h-2v2H9V2H7zm12 18H5V9h14v11zM5 6h14v1H5V6zm2 6h3v3H7v-3zm5 0h3v3h-3v-3z",
 };
 
 export function Icon({ name, className = "h-5 w-5" }) {
+  const path = paths[name];
+
+  if (!path) {
+    return null;
+  }
+
   return (
     <svg
       className={className}
@@ -20,7 +36,7 @@ export function Icon({ name, className = "h-5 w-5" }) {
       aria-hidden="true"
       focusable="false"
     >
-      <path fill="currentColor" d={paths[name]} />
+      <path fill="currentColor" d={path} />
     </svg>
   );
 }

@@ -1,6 +1,50 @@
 import { site } from "../data/site.config";
 import { Icon } from "./Icon";
 
+function createCalendarFile(venue) {
+  const escapeIcsText = (value = "") =>
+    value
+      .replace(/\\/g, "\\\\")
+      .replace(/\n/g, "\\n")
+      .replace(/,/g, "\\,")
+      .replace(/;/g, "\\;");
+
+  const calendarText = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Mrudula and Puneeth//Wedding Invitation//EN",
+    "CALSCALE:GREGORIAN",
+    "BEGIN:VEVENT",
+    `UID:mrudula-puneeth-wedding-${venue.calendarStart}@mp-wedding-invite`,
+    `DTSTAMP:${new Date()
+      .toISOString()
+      .replace(/[-:]/g, "")
+      .replace(/\.\d{3}Z$/, "Z")}`,
+    `DTSTART:${venue.calendarStart}`,
+    `DTEND:${venue.calendarEnd}`,
+    `SUMMARY:${escapeIcsText(venue.calendarTitle)}`,
+    `LOCATION:${escapeIcsText(venue.calendarLocation)}`,
+    `DESCRIPTION:${escapeIcsText(venue.calendarDescription)}`,
+    "END:VEVENT",
+    "END:VCALENDAR",
+  ].join("\r\n");
+
+  const calendarFile = new Blob([calendarText], {
+    type: "text/calendar;charset=utf-8",
+  });
+
+  const downloadUrl = URL.createObjectURL(calendarFile);
+  const link = document.createElement("a");
+
+  link.href = downloadUrl;
+  link.download = "mrudula-puneeth-wedding.ics";
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+
+  URL.revokeObjectURL(downloadUrl);
+}
+
 export function Venue() {
   const { venue } = site;
 
@@ -32,15 +76,26 @@ export function Venue() {
             {venue.directions}
           </p>
 
-          <a
-            href={venue.mapsUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-6 inline-flex min-h-11 items-center gap-2 rounded-full bg-accent-deep px-5 text-sm font-medium text-page"
-          >
-            <Icon name="map" className="h-5 w-5" />
-            {venue.mapsCta}
-          </a>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a
+              href={venue.mapsUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex min-h-11 items-center gap-2 rounded-full bg-accent-deep px-5 text-sm font-medium text-page"
+            >
+              <Icon name="map" className="h-5 w-5" />
+              {venue.mapsCta}
+            </a>
+
+            <button
+              type="button"
+              onClick={() => createCalendarFile(venue)}
+              className="inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-full border border-accent-deep px-5 text-sm font-medium text-accent-deep transition-colors hover:bg-accent-deep hover:text-page"
+            >
+              <Icon name="calendar" className="h-5 w-5" />
+              {venue.calendarCta}
+            </button>
+          </div>
         </div>
 
         {/*

@@ -122,6 +122,12 @@ export const site = {
     //embedUrl:
       //"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.576622243592!2d78.47269222664588!3d17.452813105061647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a6f1b09435f%3A0x72e9d68899eae2a!2sSri%20Raja%20Rajeshwari%20Convention!5e0!3m2!1sen!2sde!4v1790064628294!5m2!1sen!2sde",
     //facadeCaption: "Tap to load Google Maps. The map is not loaded until you ask, so the page stays light.",
+    calendarCta: "Add to Calendar",
+    calendarTitle: "Mrudula & Puneeth's Wedding",
+    calendarStart: "20261126T050000Z",
+    calendarEnd: "20261126T100000Z",
+    calendarLocation: "https://maps.app.goo.gl/Tprstqf7mFV5hk6f7",
+    calendarDescription: "Sri Raja Rajeshwari Convention, Bowenpally, Secunderabad, Hyderabad, Telangana 500009, India. Join us for the wedding celebration of Mrudula and Puneeth.",
   },
   gallery: {
     eyebrow: "A glimpse",
@@ -229,7 +235,7 @@ export const site = {
     {
       id: "first-meeting",
       date: "19 November 2025",
-      text: "The miles between is diminished as we met for the first time across the oceans.",
+      text: "The miles between us diminished as we met for the first time across the oceans.",
     },
     {
       id: "first-trip",
@@ -250,7 +256,7 @@ export const site = {
 
   footer: {
     closing: "We cannot wait to celebrate with you.",
-    crafted: "Crafted with 💜.",
+    crafted: "Crafted with 💜",
   },
 };
 
