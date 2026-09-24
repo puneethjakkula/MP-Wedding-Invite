@@ -126,7 +126,7 @@ export const site = {
     calendarTitle: "Mrudula & Puneeth's Wedding",
     calendarStart: "20261126T050000Z",
     calendarEnd: "20261126T100000Z",
-    calendarLocation: "https://maps.app.goo.gl/Tprstqf7mFV5hk6f7",
+    calendarLocation: "Sri Raja Rajeshwari Convention, Sy.No.26, Sikh Rd, Diamond Point, Sikh Village, Bowenpally, Secunderabad, Telangana 500009, India",
     calendarDescription: "Sri Raja Rajeshwari Convention, Bowenpally, Secunderabad, Hyderabad, Telangana 500009, India. Join us for the wedding celebration of Mrudula and Puneeth.",
   },
   gallery: {
